@@ -101,4 +101,10 @@ class ListaProdutosActivity : UsuarioBaseActivity() {
         }
     }
 
+    private suspend fun buscaProdutos() {
+        ProdutoRepository(produtoDao).buscaTodos().collect { produtos ->
+            adapter.atualiza(produtos)
+        }
+    }
+
 }

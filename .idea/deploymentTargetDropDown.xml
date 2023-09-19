@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="ProdutoActivityTest">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="asd()">
+        <State />
+      </entry>
+      <entry key="deveMostrarCamposNecessarioParaCriarUmProduto()">
+        <State />
+      </entry>
+      <entry key="deveSerCapazDePreencherCamposESalvar()">
+        <State />
+      </entry>
+      <entry key="deveTerTodosOsCamposNecessariosFazerCadastro()">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

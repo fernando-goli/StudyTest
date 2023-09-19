@@ -3,8 +3,10 @@ package br.com.alura.orgs.database.repository
 import android.content.Context
 import br.com.alura.orgs.database.AppDatabase
 import br.com.alura.orgs.database.dao.ProdutoDao
+import br.com.alura.orgs.database.dao.UsuarioDao
 import br.com.alura.orgs.extensions.toast
 import br.com.alura.orgs.model.Produto
+import br.com.alura.orgs.model.Usuario
 import io.mockk.*
 import io.mockk.InternalPlatformDsl.toArray
 import kotlinx.coroutines.test.runTest
@@ -32,7 +34,7 @@ class ProdutoRepositoryTests {
         //Act
         produtoRepository.salva(produto)
 
-        coVerify {
+        coVerify(exactly = 1) {
             dao.salva(produto)
         }
     }
